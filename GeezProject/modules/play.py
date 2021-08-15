@@ -243,7 +243,7 @@ async def hfmm(_, message):
     status = message.text.split(None, 1)[1]
     message.chat.id
     if status == "ON" or status == "on" or status == "On":
-        lel = await message.reply("`Processing...`")
+        lel = await message.reply("`Mohon Menunggu Sebentar Coeg😁`")
         if not message.chat.id in DISABLED_GROUPS:
             await lel.edit("**Pemutar Musik Sudah Diaktifkan Di Obrolan Ini**")
             return
@@ -253,7 +253,7 @@ async def hfmm(_, message):
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
-        lel = await message.reply("`Processing...`")
+        lel = await message.reply("`Mohon Menunggu Sebentar Coeg😁`")
         
         if message.chat.id in DISABLED_GROUPS:
             await lel.edit("**Pemutar Musik Sudah dimatikan Dalam Obrolan Ini**")
@@ -534,10 +534,11 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("📌 Groups", url="https://t.me/GeezSupportGroup"),
-                    InlineKeyboardButton("⛑ Channel", url="https://t.me/GeezProjets"),
+                    InlineKeyboardButton("ᴘ ʟ ᴀ ʏ ʟ ɪ ꜱ ᴛ", callback_data="playlist"),
+                    InlineKeyboardButton("ᴏ ᴡ ɴ ᴇ ʀ", url=f"https://t.me/RhitoSakai"),
                 ],
-                [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
+                [InlineKeyboardButton(text="ᴊ ᴏ ɪ ɴ  ɢ ᴄ", url=f"https://t.me/ChatBotXanon")],
+                [InlineKeyboardButton(text="❌ ᴛ ᴜ ᴛ ᴜ ᴘ", callback_data="cls")],
             ]
         )
         file_name = get_file_name(audio)
@@ -581,10 +582,11 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("📌 Groups", url="https://t.me/GeezSupportGroup"),
-                    InlineKeyboardButton("⛑ Channel", url="https://t.me/GeezProjects"),
+                    InlineKeyboardButton("ᴘ ʟ ᴀ ʏ ʟ ɪ ꜱ ᴛ", callback_data="playlist"),
+                    InlineKeyboardButton("ᴏ ᴡ ɴ ᴇ ʀ", url=f"https://t.me/RhitoSakai"),
                 ],
-                [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
+                [InlineKeyboardButton(text="ᴊ ᴏ ɪ ɴ  ɢ ᴄ", url=f"https://t.me/ChatBotXanon")],
+                [InlineKeyboardButton(text="❌ ᴛ ᴜ ᴛ ᴜ ᴘ", callback_data="cls")],
             ]
         )
         requested_by = message.from_user.first_name
@@ -611,8 +613,8 @@ async def play(_, message: Message):
 
             while j < 5:
                 toxxt += f"{emojilist[j]} [{results[j]['title'][:25]}](https://youtube.com{results[j]['url_suffix']})\n"
-                toxxt += f" ├ 💡 **Duration** - {results[j]['duration']}\n"
-                toxxt += f" └ ⚡ __Powered by Geez Music Project__\n\n"
+                toxxt += f" ├ 💡 **Durasi** - {results[j]['duration']}\n"
+                toxxt += f" └ ☠️ __Powered by 𝗦𝗛𝗔𝗗𝗢𝗪 𝗠𝗨𝗦𝗜𝗖__\n\n"
 
                 j += 1            
             koyboard = InlineKeyboardMarkup(
@@ -659,10 +661,11 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("📌 Groups", url="https://t.me/GeezSupportGroup"),
-                    InlineKeyboardButton("⛑ Channel", url="https://t.me/GeezProjects"),
+                    InlineKeyboardButton("ᴘ ʟ ᴀ ʏ ʟ ɪ ꜱ ᴛ", callback_data="playlist"),
+                    InlineKeyboardButton("ᴏ ᴡ ɴ ᴇ ʀ", url=f"https://t.me/RhitoSakai"),
                 ],
-                [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
+                [InlineKeyboardButton(text="ᴊ ᴏ ɪ ɴ  ɢ ᴄ", url=f"https://t.me/ChatBotXanon")],
+                [InlineKeyboardButton(text="❌ ᴛ ᴜ ᴛ ᴜ ᴘ", callback_data="cls")],
             ]
         )
             requested_by = message.from_user.first_name
@@ -801,10 +804,11 @@ async def ytplay(_, message: Message):
     keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("📌 Groups", url="https://t.me/GeezSupportGroup"),
-                    InlineKeyboardButton("⛑ Channel", url="https://t.me/GeezProjects"),
+                    InlineKeyboardButton("ᴘ ʟ ᴀ ʏ ʟ ɪ ꜱ ᴛ", callback_data="playlist"),
+                    InlineKeyboardButton("ᴏ ᴡ ɴ ᴇ ʀ", url=f"https://t.me/RhitoSakai"),
                 ],
-                [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
+                [InlineKeyboardButton(text="ᴊ ᴏ ɪ ɴ  ɢ ᴄ", url=f"https://t.me/ChatBotXanon")],
+                [InlineKeyboardButton(text="❌ ᴛ ᴜ ᴛ ᴜ ᴘ", callback_data="cls")],
             ]
         )
     requested_by = message.from_user.first_name
@@ -1000,7 +1004,7 @@ async def lol_cb(b, cb):
     if cb.from_user.id != useer_id:
         await cb.answer("Anda bukan orang yang meminta untuk memutar lagu!", show_alert=True)
         return
-    await cb.message.edit("**Processing**")
+    await cb.message.edit("**Mohon Menunggu Sebentar Coeg😁**")
     x=int(x)
     try:
         useer_name = cb.message.reply_to_message.from_user.first_name
@@ -1034,10 +1038,11 @@ async def lol_cb(b, cb):
     keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("📌 Groups", url="https://t.me/GeezSupportGroup"),
-                    InlineKeyboardButton("🛡️ Channel", url="https://t.me/GeezProjects"),
+                    InlineKeyboardButton("ᴘ ʟ ᴀ ʏ ʟ ɪ ꜱ ᴛ", callback_data="playlist"),
+                    InlineKeyboardButton("ᴏ ᴡ ɴ ᴇ ʀ", url=f"https://t.me/RhitoSakai"),
                 ],
-                [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
+                [InlineKeyboardButton(text="ᴊ ᴏ ɪ ɴ  ɢ ᴄ", url=f"https://t.me/ChatBotXanon")],
+                [InlineKeyboardButton(text="❌ ᴛ ᴜ ᴛ ᴜ ᴘ", callback_data="cls")],
             ]
         )
     requested_by = useer_name
