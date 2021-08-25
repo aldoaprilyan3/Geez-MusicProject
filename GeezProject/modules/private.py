@@ -164,7 +164,7 @@ async def reload(client: Client, message: Message):
                         " ɢʀᴏᴜᴘ ꜱᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/ChatBotXanon"
                     ),
                     InlineKeyboardButton(
-                        " ᴏ ᴡ ɴ ᴇ ʀ ", url=f"https://t.me/VckyouuBitch"
+                        " ᴏ ᴡ ɴ ᴇ ʀ ", url=f"https://t.me/RhitoSakai"
                     )
                 ]
             ]
